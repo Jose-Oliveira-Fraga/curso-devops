@@ -1,0 +1,186 @@
+    1  cd /root/
+    2  ls
+    3  ls -la
+    4  cd -
+    5  cd -
+    6  cd -
+    7  exit
+    8  mkdir -pv /var/repositorio1 repositorio2
+    9  cd /var/repositorio1/
+   10  ls -la
+   11  git init
+   12  git branch
+   13  git branch -m main
+   14  git branch
+   15  pwd
+   16  mkdir -pv /var/repositorio1 repositorio2
+   17  ls -ld /var/
+   18  cd /var/repositorio1/
+   19  ls
+   20  ls -la
+   21  git init
+   22  git branch -m main
+   23  git branch
+   24  git config --global init.defaultBranch 
+   25  vim /root/.gitconfig
+   26  vim /root/ .gitconfig
+   27   vim /root/.gitconfig
+   28   vim /root/.gitconfig 
+   29  git config --global -list
+   30  git config --global --list
+   31  git st
+   32  git status
+   33  ls -la
+   34  cd .git/
+   35  ls -l
+   36  vim config --local user.name"José Fraga"
+   37  vim config --local user.email "fraga927@gmail.com"
+   38  vim config 
+   39  vim config --local user.name"José Fraga"
+   40  git config --local user.name "José Fraga"
+   41  git config --local user.email "fraga927@gmail.com"
+   42  vim config 
+   43  ls -l
+   44  ls hooks/
+   45  cd ..
+   46  pwd
+   47  git st
+   48  p /vagrant/Vagrantfile ./
+   49  p /vagrant/Vagrantfile .
+   50  cp /vagrant/Vagrantfile ./
+   51  ls Vagrantfile 
+   52  ls
+   53  ls -l
+   54  ls -lh
+   55  cat Vagrantfile 
+   56  git add Vagrantfile 
+   57  git add .
+   58  git st
+   59  git rm --cached Vagrantfile 
+   60  git st
+   61  git add Vagrantfile 
+   62  git st
+   63   git commit 
+   64  git status
+   65  git log
+   66  git log --oneline
+   67  git log --online
+   68  mkdir -pv /var/clonerepolocal
+   69  cd /var/clonerepolocal/
+   70  ls -la
+   71  git clone https://github.com/htop-dev/htop.git
+   72  ls -l
+   73  cd htop/
+   74  ls -la
+   75  git status
+   76  cd ..
+   77  ls -l
+   78  rm -rf htop/
+   79  ls -l
+   80  git clone /var/clonerepolocal/ .
+   81  git clone /var/repositorio1/ .
+   82  ls -l
+   83  ls -la
+   84  git config --local --list
+   85  cd /var/repositorio1/
+   86  ls -l
+   87  cp /vagrant/script.sh .
+   88  cp /vagrant/playbook.yml .
+   89  ls -l
+   90  git status
+   91  git add .
+   92  vim .git/hooks/pre-commit
+   93  vim .git/hooks/commit-msg
+   94  chmod a+x .git/hooks/pre-commit
+   95  chmod a+x .git/hooks/commit-msg
+   96  git commit -m "Segundo commit adicionando novos arquivos"
+   97  git status
+   98  git commit -m "test: Segundo commit adicionando novos arquivos"
+   99  rm .git/hooks/pre-commit
+  100  rm .git/hooks/commit-msg
+  101  git log
+  102  gtit config --global alias.lg "log --oneline"
+  103  git config --global alias.lg "log --oneline"
+  104  git lg
+  105  ls -la
+  106  cp /etc/shadow .
+  107  ls -la
+  108  vim .gitignore
+  109  git st
+  110  git add .
+  111  git commit -m "Adicionando arquivo. gitignore"
+  112  git status 
+  113  git lg
+  114  ls -l
+  115  cd repositorio2/
+  116  ls
+  117  ls -l
+  118  cd ..
+  119  rmdir repositorio2/
+  120  ls -l
+  121  cd /var/
+  122  ls -l
+  123  cd  repositorio1
+  124  ls -l
+  125  cd /var/repositoriobare/
+  126  git init --bare
+  127  ls -la
+  128  git status
+  129  cd /var/repositorio1/
+  130  git remote add local /var/repositoriobare/
+  131  git remote -v
+  132  git push local main
+  133  cd /var/repositorio2/
+  134  ls -la
+  135  git init
+  136  ls -la
+  137  git remote -v
+  138  git remote add local /var/repositoriobare/
+  139  git config --local user.name Kamila
+  140  git config --local user.email kamila@asf.com
+  141  ls -la
+  142  git pull local main
+  143  git branch
+  144  ls
+  145  git config pull.rebase false
+  146  git config --global pull.rebase false
+  147  git pull local main
+  148  mkdir -pv /var/repositorio3
+  149  git init
+  150  cd /var/repositorio3/
+  151  git init
+  152  git config --local user.name "Rafaela"
+  153  git config --local user.email rafaela@asf.com
+  154  git branch -M main
+  155  git branch
+  156  git remote add local /var/repositoriobare/
+  157  git remote add origin https://github.com/Jose-Oliveira-Fraga/curso-devops.git
+  158  git remote -v
+  159  git pull origin main
+  160  git pull local main
+  161  git status
+  162  ls
+  163  git push origin main
+  164  cd /tmp/
+  165  wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.0/gcm-linux_amd64.2.6.0.deb
+  166  dpkg -i gcm-linux_amd64.2.6.0.deb 
+  167  gcm --version
+  168  git config --global credential.credentialStore gpg
+  169  export GCM_CREDENTIAL_STORE=gpg
+  170  apt install pass -y
+  171  gpg --gen-key
+  172  gpg --list-keys
+  173  pass init Oliveira
+  174  export GPG_TTY=$(tty)
+  175  vim /etc/profile
+  176  echo "export GPG_TTY=$(tty)" >> /etc/profile
+  177  cat /etc/profile | less
+  178  tail -n 1 /etc/profile
+  179  export GPG_TTY=$(tty)
+  180  git-credential-manager configure
+  181  cd /var/repositorio3/
+  182  git push origin main
+  183  history > aula_git_comandos.txt /home/oliver/curso/devops
+  184  history 
+  185  history > comandos_git.txt /home/oliver/curso/devops
+  186  history > comandos_git.txt
